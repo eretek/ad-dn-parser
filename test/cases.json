@@ -1,0 +1,54 @@
+{
+ "tests": [
+  {
+   "in": {
+    "dn": "CN=Soyad\\, Ad,OU=IT,DC=contoso,DC=com"
+   },
+   "v": {
+    "items": [
+     {
+      "cn": "Soyad, Ad",
+      "ou": [
+       "IT"
+      ],
+      "domain": "contoso.com",
+      "rdns": 4,
+      "multi": false
+     }
+    ]
+   }
+  },
+  {
+   "in": {
+    "dn": "CN=Sales+UID=s01,OU=G,DC=x,DC=y"
+   },
+   "v": {
+    "items": [
+     {
+      "cn": "Sales",
+      "multi": true,
+      "rdns": 4
+     }
+    ]
+   }
+  },
+  {
+   "in": {
+    "dn": "CN=Test\\2C Ali,DC=x,DC=y"
+   },
+   "v": {
+    "items": [
+     {
+      "cn": "Test, Ali"
+     }
+    ]
+   }
+  },
+  {
+   "in": {
+    "dn": "Ali Yılmaz,OU=IT"
+   },
+   "err": "dn"
+  }
+ ]
+}
